@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+}
+
+body{
+    background: #212225;
+    color: rgb(255, 255, 255);
+}
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    padding: 16px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+}
+
+#gymIcon{
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 40px;
+    float: left;
+    padding-top: 20px;
+}
+
+nav h2{
+    cursor: pointer;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    float: left;
+}
+
+nav ul{
+    text-align: right;
+    margin-right: 40px;
+    padding-top: 20px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+}
+
+nav ul a li{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+a{
+    text-decoration: none;
+}
+
+nav ul a li:hover{
+    text-decoration: none;
+    color: #ffd220;
+    transition: 0.5s; 
+}
+
+#home{
+    color: #ffd220;
+}
+
+#contact{
+    border: 2px white solid;
+    padding: 5px 50px 10px 50px;
+}
+
+#contact:hover{
+    background-color: #ffd220;
+    color: black;
+    border: 2px #ffd220 solid;
+    transition: 0.5s; 
+}
+
+.mainBanner{
+    margin-top: 85px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)), url(./img/gymBanner.jpg);
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+}
+
+.presentation h1{
+    font-size: 3.5rem;
+    padding-top: 200px;
+    padding-left: 90px;
+}
+
+.gymName{
+    color: #ffd220;
+    font-size: 5rem;
+}
+
+.presentation h3{
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-left: 90px;
+}
+
+.contactUs{
+    float: right;
+    background-color: rgba(61, 61, 61, 0.534);
+    border-radius: 10%;
+    max-width: 500px;
+    margin: 150px;
+    margin-left: 280px;
+    padding: 20px 10px 80px 20px;
+}
+
+.contactUs h3{
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+.contactUs p{
+    margin-left: 15px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.form{
+    max-width: 400px;
+}
+
+.form #name, #mail, #number{
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+    background-color: #0000008a;
+    color: white;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+#submit{
+    cursor: pointer;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+    color: black;
+    font-weight: 800;
+    background-color: #ffd220;
+}
+
+
+.about{
+    display: flex;
+    padding: 55px 30px 55px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#aboutFig{
+    width: 450px;
+    padding: 30px 0 0 30px;
+}
+
+.aboutTxt{
+    margin-left: 130px;
+    padding-top: 20px;
+}
+
+.aboutTxt h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+#gymName2{
+    color: #ffd220;
+}
+
+.aboutTxt p{
+    font-size: 16px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+.aboutTxt button{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 40px;
+    background-color: #ffd220;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.aboutTxt button:hover{
+    color: white;
+    background-color: #36363631;
+    transition: 0.9s;
+    border: #ffd220 solid 1px;
+}
+
+.courses{
+    background-color: #1d1e20;
+}
+
+.courses h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+#training{
+    color: #ffd220;
+}
+
+.exercices{
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+.weightLifiting{
+    background-color: #212225;
+    border: #212225 2px solid;
+    display: inline-block;
+    height: 380px;
+    max-width: 320px;
+    padding: 30px 25px 50px 25px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.weightLifiting h1{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.weightLifiting h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.weightLifiting p{
+    font-size: 18px;
+    border-bottom: white solid 1px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+}
+
+.weightLifiting:hover{
+    background-color: #ffd220;
+    color: black;
+    border: rgba(255, 255, 255, 0.527) 2px solid;
+    transition: 0.2s;
+}
+
+.cycleGym{
+    background-color: #212225;
+    border: #212225 2px solid;
+    display: inline-block;
+    height: 380px;
+    max-width: 320px;
+    padding: 30px 25px 50px 25px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.cycleGym h1{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.cycleGym h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.cycleGym p{
+    font-size: 18px;
+    border-bottom: white solid 1px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+}
+
+.cycleGym:hover{
+    background-color: #ffd220;
+    color: black;
+    border: rgba(0, 0, 0, 0.527) 2px solid;
+    transition: 0.2s;
+    border-bottom: black
+}
+
+.boxing{
+    background-color: #212225;
+    border: #212225 2px solid;
+    display: inline-block;
+    height: 380px;
+    max-width: 320px;
+    padding: 30px 25px 50px 25px;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.boxing h1{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.boxing h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.boxing p{
+    font-size: 18px;
+    border-bottom: white solid 1px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+}
+
+.boxing:hover{
+    background-color: #ffd220;
+    color: black;
+    border: rgba(255, 255, 255, 0.527) 2px solid;
+    transition: 0.2s;
+}
+
+
+.swimming{
+    background-color: #212225;
+    border: #212225 2px solid;
+    display: inline-block;
+    height: 380px;
+    max-width: 320px;
+    padding: 30px 25px 50px 25px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.swimming h1{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.swimming h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.swimming p{
+    font-size: 18px;
+    border-bottom: white solid 1px;
+    line-height: 26px;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+}
+
+.swimming:hover{
+    background-color: #ffd220;
+    color: black;
+    border: rgba(0, 0, 0, 0.527) 2px solid;
+    transition: 0.2s;
+    border-bottom: black
+}
+
+.explore{
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)), url(./img/exploreBg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.explore #watch{
+    margin-top: 200px;
+    cursor: pointer;
+    background-color: #ffd220;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 4px solid #18171767;
+}
+
+.explore #watch:hover{
+    border: 10px solid #18171767;
+    width: 150px;
+    height: 150px;
+    transition: 0.8s;
+}
+
+.explore h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.explore h3{
+    color: #ffd220;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.footer{
+    /* background-image: linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.5)), url(./img/grayBg.jpg); */
+    background-color: #212225;
+    height: 40vh;
+    /* background-position: center;
+    background-size: cover; */
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+}
+
+.footer .social{
+    max-width: 320px;
+    padding: 20px;
+    padding-right: 35px;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-bottom: 35px;
+}
+
+.social p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.footer .opening{
+    max-width: 280px;
+    padding: 20px;
+    padding-right: 25px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+.opening h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.opening ul{
+    margin-top: 40px;
+    list-style: none;
+}
+
+.opening ul li p{
+    margin-bottom: 20px;
+}
+
+#time1{
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+#time2{
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+
+#time3{
+    margin-bottom: 20px;
+    margin-left: 65px;
+}
+
+.footer .contact{
+    max-width: 280px;
+    padding: 20px;
+    padding-right: 25px;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+
+.contact h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.contact p{
+    margin-top: 15px;
+}
+
+.rights{
+    height: 50px;
+    background-color: #1d1e20;
+}
+
+.rights h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footerBy{
+    color: #ffd220;
+}
+
+
+@media screen and (max-width:1300px){
+   
+    .contactUs{
+        margin-bottom: 130px;
+        padding: 20px 10px 80px 20px;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+        
+    .mainBanner{
+        height: 130vh;
+        display: block;
+    }
+
+    .presentation{
+        text-align: center;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .contactUs{
+        margin: 150px;
+        margin-left: 50px;
+        margin-right: 250px;
+    }
+
+    .contactUs p{
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        margin-left: 65px;
+    }
+
+    .about{
+        display: block;
+    }
+
+    #aboutFig{
+        width: 450px;
+        padding: 30px 0 0 30px;
+        margin-left: 300px;
+    }
+
+}
+
+@media screen and (max-width:1100px){
+
+    nav ul a li{
+        display: none;
+    }
+
+    #aboutFig{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    
+    .weightLifiting{
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+
+    .cycleGym{
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+
+    .boxing{
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+
+    .swimming{
+        display: block;
+        margin: 0px auto 30px auto;
+    }
+}
